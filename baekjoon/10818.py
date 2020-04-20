@@ -1,5 +1,5 @@
-length = int(input())
-l = list(map(int, input().split(" ")))
+t = int(input())
+arr = list(map(int, input().split()))
 
-l.sort()
-print(int(l[0]), int(l[-1]))
+arr.sort()
+print(arr[0], arr[-1])
