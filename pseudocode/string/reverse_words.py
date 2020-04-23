@@ -38,5 +38,11 @@ def reverse_word2(s):
       sentence.append("".join(word))
   sentence = _reverse(sentence)
   return " ".join(sentence)
+
+# pythonice
+def reverse_word3(s):
+  words = s.split()
+  new_words = words[::-1]:
+  return " ".join(new_words)  
   
   
