@@ -1,10 +1,11 @@
-
 n = int(input())
 
 arr = []
-count= 99
+count= 0
 
 def _calc(n):
+  if n < 100:
+    return True
   s=list(map(int,str(n)))
   d=s[1]-s[0]
   for i in range(len(s)-1,0,-1):
@@ -12,7 +13,7 @@ def _calc(n):
           return False
   return True
 
-for i in range(111, n+1):
+for i in range(1, n+1):
   if _calc(i):
     count+=1
 print(count)
