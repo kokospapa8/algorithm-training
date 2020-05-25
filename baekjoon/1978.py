@@ -22,3 +22,19 @@ for i in iter_list:
       if j in mem:
         mem.remove(j)
 print(len(set(arr).intersection(set(mem))))
+
+'''
+list remove is O(n) ops
+
+'''
+import math
+min, max = map(int,input().split())
+
+mem = set(range(2,max+1))
+
+for i in range(2,int(math.sqrt(max+1))+1):
+  if not i in mem:
+    continue
+  for j in range(i+i, max+2, i):
+    if j in mem:
+      mem.remove(j)
