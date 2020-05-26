@@ -42,8 +42,9 @@ for i in range(0, len_array-2):
       right-=1
     else:
       result.add((input_array[i],input_array[left],input_array[right]))
-      break;
-
+      left+=1
+      right-=1
+ 
 #convert result to set
 ret = []
 for s in result:
