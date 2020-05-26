@@ -1,12 +1,39 @@
-# 2 numbers
+# pair
 ## brute force
-n**2
-## use hash
+time - n**2
+space - 1
+```
+for i in range(i, len-1):
+    for j in range(i+1, len):
+        if sum == 0:
+        print(val[i,j])
+```
+## memoize
+time - n
+space - n 
+```
+dict = {}
+for i in range(0, len-1):
+    diff = 0 - arr[i]
+    if diff in dict:
+        print(i,dict[diff])
+    dict[arr[i]] =i
+```
 ## walk inside 
+time - nlogn
+space - 1
+```
+arr.sort()
+l = 0
+r = len -1
+while l < r:
+    if arr[l]+arr[r] == 0:
+        print(arr[l],arr[r])
+    (arr[l] + arr[r] < sum)? l+=1: r--
+    
 
 
-# 3 numbers
-
+```
 
 # triplet
 ## bruteforce
