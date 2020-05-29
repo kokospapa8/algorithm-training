@@ -12,8 +12,12 @@ Given : def rand_7 => random(1~7), create rand_5.
 => random_5 + (2 mod random_5 ) # this is not uniformly distributed
 => ( 7 * random_5 ) mod 7 +1 # this is not uniformly distributed solution 
 
-
-
+### use accept and reject 
+i=0;
+while(i > 21):
+  i = 5 * (rand5() - 1) + rand5();  // i is now uniformly random between 1 and 25 
+// i is now uniformly random between 1 and 21
+return i % 7 + 1; 
 ```
 ## Q3
 ```
